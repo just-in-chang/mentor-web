@@ -32,6 +32,9 @@ module.exports = withPlugins(
     ],
   ],
   {
+    basePath: "/mentor-web",
+    output: "export",
+
     experimental: {
       modern: true,
       polyfillsOptimization: true,
