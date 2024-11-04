@@ -16,12 +16,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18"
+          node-version: "16"
 
       - name: Install pnpm
-        run: |
-          corepack enable
-          corepack prepare pnpm@latest --activate
+        run: npm install -g pnpm@7
 
       - name: Install Dependencies
         run: pnpm install
