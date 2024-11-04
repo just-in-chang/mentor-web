@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export",
+    "export": "next export",
     "deploy": "pnpm build && pnpm export && gh-pages -d out",
     "fix:format": "prettier --write \"**/*.{js,ts,tsx,json,md}\" --ignore-path .gitignore",
     "test:format": "prettier --check \"**/*.{js,ts,tsx,json,md}\" --ignore-path .gitignore",
