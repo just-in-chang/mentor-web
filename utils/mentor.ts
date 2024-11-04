@@ -87,7 +87,9 @@ export class NormalizedDFA {
     readonly simpleAlphabet: boolean,
     readonly initialState: string,
     readonly acceptingStates: string[],
-    readonly stateTransitions: { [state: string]: { [symbol: string]: string } }
+    readonly stateTransitions: {
+      [state: string]: { [symbol: string]: string };
+    }
   ) {}
 }
 
