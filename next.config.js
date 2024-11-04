@@ -33,12 +33,7 @@ module.exports = withPlugins(
   ],
   {
     basePath: "/mentor-web",
-    output: "export",
-
-    experimental: {
-      modern: true,
-      polyfillsOptimization: true,
-    },
+    assetPrefix: "/mentor-web/",
 
     webpack(config, { dev, isServer }) {
       const splitChunks =
